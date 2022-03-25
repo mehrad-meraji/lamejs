@@ -8,11 +8,11 @@ lamejs is a rewrite of jump3r-code which is a rewrite of libmp3lame.
 To install via Bower or npm, simply do the following:
 
 ```bash
-$ bower install lamejs --save
+$ bower install @_mehrad/lamejs --save
 ```
 
 ```bash
-$ npm install lamejs
+$ npm install @_mehrad/lamejs
 ```
 
 # Quick Start
@@ -43,13 +43,13 @@ console.debug(mp3Data);
 To use lamejs in Node.js build, you can install it from `npm`:
 
 ```
-npm install lamejs
+npm install @_mehrad/lamejs
 ```
 
 Then use it:
 
 ```
-var lamejs = require("lamejs");
+var lamejs = require("@_mehrad/lamejs");
 ```
 
 # Real Example
