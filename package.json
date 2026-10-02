@@ -1,18 +1,30 @@
 {
   "name": "@_mehrad/lamejs",
-  "version": "1.2.1",
-  "description": "Pure JavaScript MP3 Encoder",
-  "main": "src/js/index.js",
-  "directories": {
-    "doc": "doc",
-    "test": "test"
+  "version": "2.0.0",
+  "description": "MP3 (CBR) encoder in TypeScript, ported from LAME. ESM only, tree-shakeable, no dependencies.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "test": "node src/js/Tests.js"
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test test/",
+    "bench": "tsc -p . && node test/bench.js",
+    "size": "tsc -p . && esbuild dist/index.js --bundle --minify --format=esm --log-level=error | gzip -9 | wc -c",
+    "prepublishOnly": "npm test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhuker/lamejs.git"
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [
     "mp3",
@@ -22,11 +34,16 @@
   ],
   "author": "Alex Zhukov",
   "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/zhuker/lamejs/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehrad-meraji/lamejs.git"
   },
-  "homepage": "https://github.com/zhuker/lamejs#readme",
-  "dependencies": {
-    "use-strict": "1.0.1"
+  "bugs": {
+    "url": "https://github.com/mehrad-meraji/lamejs/issues"
+  },
+  "homepage": "https://github.com/mehrad-meraji/lamejs#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
   }
 }

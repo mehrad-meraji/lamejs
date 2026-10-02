@@ -1,0 +1,62 @@
+{
+ "Left.wav@64": {
+  "channels": 1,
+  "sampleRate": 48000,
+  "length": 60288,
+  "sha1": "928e9f49d0f9a9dde0a1edcbedcf367c9031e892"
+ },
+ "Left.wav@128": {
+  "channels": 1,
+  "sampleRate": 48000,
+  "length": 120576,
+  "sha1": "da4e1cc76411e96fa9892d6c8219880a5884f19b"
+ },
+ "Left44100.wav@64": {
+  "channels": 1,
+  "sampleRate": 44100,
+  "length": 60395,
+  "sha1": "6393ec7a59ba8842926dcf8ff556f0393945df76"
+ },
+ "Left44100.wav@128": {
+  "channels": 1,
+  "sampleRate": 44100,
+  "length": 120790,
+  "sha1": "9dec3c07ea6a013bd5a6d964aef187986d97dc84"
+ },
+ "Right.wav@64": {
+  "channels": 1,
+  "sampleRate": 48000,
+  "length": 60288,
+  "sha1": "00e3f047ab34d7dab2a104c048401b507c68987d"
+ },
+ "Right.wav@128": {
+  "channels": 1,
+  "sampleRate": 48000,
+  "length": 120576,
+  "sha1": "6244168067ee3a80e65ef84d109802b839eddb51"
+ },
+ "Right44100.wav@64": {
+  "channels": 1,
+  "sampleRate": 44100,
+  "length": 60395,
+  "sha1": "b543194935673caf1706122e4f66055279570f8e"
+ },
+ "Right44100.wav@128": {
+  "channels": 1,
+  "sampleRate": 44100,
+  "length": 120790,
+  "sha1": "7be0b5075b1daded01fecf2acd925ee42a3588dd"
+ },
+ "Stereo44100.wav@64": {
+  "channels": 2,
+  "sampleRate": 44100,
+  "length": 60480,
+  "sha1": "ef5ea94bca5dcc0ddee6a7f7044155d29be84397"
+ },
+ "Stereo44100.wav@128": {
+  "channels": 2,
+  "sampleRate": 44100,
+  "length": 120790,
+  "sha1": "1d37b5d944d3dcd210cb7b37994627ecb04a7560"
+ }
+}
